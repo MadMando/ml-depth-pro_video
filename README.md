@@ -4,13 +4,13 @@
 This repository expands upon [Apple's ML-Depth Pro](https://github.com/apple/ml-depth-pro/tree/main) to showcase depth perception in images and real-time video feeds. My goal was to explore the model's capabilities and extend its use to live video streams.
 
 ## Features
-- **Image-based depth perception:** Apply the model to static images.
 - **Video demonstration:** Generate depth maps for pre-recorded videos.
 - **Live video integration:** Real-time depth perception with a live feed.
 
 ## Getting Started
 
 ### Prerequisites
+- CUDA 
 - Python 3.9
 - PyTorch
 - OpenCV
@@ -19,12 +19,27 @@ This repository expands upon [Apple's ML-Depth Pro](https://github.com/apple/ml-
 ### Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/username/ml-depth-perception.git
+   git clone https://github.com/MadMando/ml-depth-pro_video.git
    ```
-2. Install dependencies:
+2. Install dependencies: Per Depth pro
    ```bash
-   pip install -r requirements.txt
+   conda create -n depth-pro -y python=3.9
+   conda activate depth-pro
    ```
+3. Navigate to the repository directory. 
+   ```bash
+   cd ml-depth-pro
+   ```
+   
+4.  Install Requiremetns
+   ```bash
+   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+   pip install -e .
+
+   ```
+Install Ipykernel if necessary.
+   
 
 ### Usage
 1. Run the static image demo:

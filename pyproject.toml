@@ -10,10 +10,13 @@ dependencies = [
     "numpy<2",
     "pillow_heif",
     "matplotlib",
+    "opencv-python",
 ]
 
 [project.scripts]
 depth-pro-run = "depth_pro.cli:run_main"
+download-file = "depth_pro.scripts:download_file" 
+
 
 [project.urls]
 Homepage = "https://github.com/apple/ml-depth-pro"

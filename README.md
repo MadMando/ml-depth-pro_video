@@ -48,12 +48,16 @@ This repository expands upon [Apple's ML-Depth Pro](https://github.com/apple/ml-
    ```
 Install Ipykernel if necessary.
    
+### Hardware 
+NVIDIA RTX4080 Super
+Webcam - NEXIGO N680
 
+Set to device 0
 ### Usage
 
 1. Start the live feed:
    ```bash
-   python src/live_video_feed.py
+   python depth_video.py
    ```
 
 ## Results

@@ -50,6 +50,7 @@ This repository expands upon [Apple's ML-Depth Pro](https://github.com/apple/ml-
    
 ### Hardware 
 NVIDIA RTX4080 Super
+
 Webcam - NEXIGO N680
 
 Set to device 0
@@ -62,8 +63,7 @@ Set to device 0
 
 ## Results
 
-### Live Video
-[Live Video Demo](examples/live_feed_demo.mp4)
+
 
 ## Acknowledgements
 This project builds upon the [ML-Depth Pro repository](https://github.com/apple/ml-depth-pro/tree/main) developed by Apple Inc. I would like to acknowledge the fantastic work of Apple's Machine Learning team in creating the original model.

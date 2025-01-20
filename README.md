@@ -2,6 +2,11 @@
 
 ## Overview
 This repository expands upon [Apple's ML-Depth Pro](https://github.com/apple/ml-depth-pro/tree/main) to showcase depth perception in images and real-time video feeds. My goal was to explore the model's capabilities and extend its use to live video streams.
+## Demo
+<video controls width="600">
+  <source src="video_test/video_test_depth.mp4" type="video/mp4">
+</video>
+
 
 ## Features
 - **Video demonstration:** Generate depth maps for pre-recorded videos.
@@ -21,36 +26,34 @@ This repository expands upon [Apple's ML-Depth Pro](https://github.com/apple/ml-
    ```bash
    git clone https://github.com/MadMando/ml-depth-pro_video.git
    ```
-2. Install dependencies: Per Depth pro
+2. Navigate to the repository directory. 
+   ```bash
+   cd ml-depth-pro_video
+   ```
+3. Install dependencies: Per Depth pro
    ```bash
    conda create -n depth-pro -y python=3.9
    conda activate depth-pro
    ```
-3. Navigate to the repository directory. 
-   ```bash
-   cd ml-depth-pro
-   ```
    
 4.  Install Requiremetns
    ```bash
-   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-
    pip install -e .
-
+   ```
+4a.  Run to download checkpoints
+   ```bash
+   download-file
+   ```
+5. install other requirements
+   ```bash
+   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
    ```
 Install Ipykernel if necessary.
    
 
 ### Usage
-1. Run the static image demo:
-   ```bash
-   python src/depth_model.py --input data/sample_images/image1.jpg
-   ```
-2. Run the video demo:
-   ```bash
-   python src/depth_model.py --video examples/video.mp4
-   ```
-3. Start the live feed:
+
+1. Start the live feed:
    ```bash
    python src/live_video_feed.py
    ```

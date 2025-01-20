@@ -3,7 +3,7 @@
 ## Overview
 This repository expands upon [Apple's ML-Depth Pro](https://github.com/apple/ml-depth-pro/tree/main) to showcase depth perception in images and real-time video feeds using a standard webcam. Goal was to simply explore the capabiliyt of depth pro to use in a live feed. 
 ## Demo
-video in video_test folder
+
 ![Depth Pro Demo](video_test/video_test_depth.gif)
 
 ## Features

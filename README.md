@@ -3,9 +3,7 @@
 ## Overview
 This repository expands upon [Apple's ML-Depth Pro](https://github.com/apple/ml-depth-pro/tree/main) to showcase depth perception in images and real-time video feeds. My goal was to explore the model's capabilities and extend its use to live video streams.
 ## Demo
-<video controls width="600">
-  <source src="video_test/video_test_depth.mp4" type="video/mp4">
-</video>
+![Depth Pro Demo](video_test/video_test_depth.gif)
 
 
 ## Features

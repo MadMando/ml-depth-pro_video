@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import depth_pro
 
-# Set Torch backend configurations
+# Set Torch backend configurations for optimization
 torch.backends.cudnn.benchmark = True
 torch.cuda.synchronize()
 
@@ -35,7 +35,7 @@ def process_frame(frame):
     # Apply the transform and convert input to FP16
     image_tensor = transform(frame_image).to(device).half()
     
-    # Infer depth
+    # predioct depth
     with torch.no_grad():
         prediction = model.infer(image_tensor)
     
@@ -54,7 +54,7 @@ def live_depth_feed():
     """
     cap = cv2.VideoCapture(0)  # Open webcam (index 0)
     if not cap.isOpened():
-        print("Error: Could not open webcam.")
+        print("Error: no open webcam.")
         return
     
     while True:
@@ -71,7 +71,7 @@ def live_depth_feed():
         depth_colormap = cv2.applyColorMap(depth_visual, cv2.COLORMAP_JET)
         
         # Display the depth map
-        cv2.imshow("Depth Map", depth_colormap)
+        cv2.imshow("Depth Map press q to exit", depth_colormap)
         
         # Exit on pressing 'q'
         if cv2.waitKey(1) & 0xFF == ord('q'):

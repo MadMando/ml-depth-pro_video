@@ -1,23 +1,23 @@
 # Depth Perception with ML-Depth Pro 🚀
 
 ## Overview
-This repository expands upon [Apple's ML-Depth Pro](https://github.com/apple/ml-depth-pro/tree/main) to showcase depth perception in images and real-time video feeds. My goal was to explore the model's capabilities and extend its use to live video streams.
+This repository expands upon [Apple's ML-Depth Pro](https://github.com/apple/ml-depth-pro/tree/main) to showcase depth perception in images and real-time video feeds using a standard webcam. My goal was to explore the model's capabilities and extend its use to live video streams.
 ## Demo
+video in video_test folder
 ![Depth Pro Demo](video_test/video_test_depth.gif)
 
-
 ## Features
-- **Video demonstration:** Generate depth maps for pre-recorded videos.
 - **Live video integration:** Real-time depth perception with a live feed.
 
 ## Getting Started
 
 ### Prerequisites
 - CUDA 
+- Miniconda
 - Python 3.9
 - PyTorch
 - OpenCV
-- Additional libraries (see `requirements.txt`)
+- Additional libraries
 
 ### Installation
 1. Clone this repository:
@@ -28,9 +28,10 @@ This repository expands upon [Apple's ML-Depth Pro](https://github.com/apple/ml-
    ```bash
    cd ml-depth-pro_video
    ```
-3. Install dependencies: Per Depth pro
+3. Create Env.
    ```bash
    conda create -n depth-pro -y python=3.9
+
    conda activate depth-pro
    ```
    
@@ -46,7 +47,6 @@ This repository expands upon [Apple's ML-Depth Pro](https://github.com/apple/ml-
    ```bash
    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
    ```
-Install Ipykernel if necessary.
    
 ### Hardware 
 NVIDIA RTX4080 Super
@@ -55,7 +55,7 @@ Webcam - NEXIGO N680
 Set to device 0
 ### Usage
 
-1. Start the live feed:
+1. Start the live feed, depending on your hardware should take about a minute or less. 
    ```bash
    python depth_video.py
    ```

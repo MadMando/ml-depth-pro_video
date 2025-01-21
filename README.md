@@ -39,11 +39,11 @@ This repository expands upon [Apple's ML-Depth Pro](https://github.com/apple/ml-
    ```bash
    pip install -e .
    ```
-4a.  Run to download checkpoints
+4a.  Run to download checkpoints, might need to run a couple times to connect and download
    ```bash
    download-file
    ```
-5. install other requirements
+5. install other requirements -  cuda 11.8, go to https://pytorch.org/get-started/locally/
    ```bash
    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
    ```

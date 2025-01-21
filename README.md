@@ -56,18 +56,24 @@ Webcam - NEXIGO N680
 Set to device 0
 ### Usage
 
-1. Start the live feed, depending on your hardware should take about a minute or less. 
+1. Start the live feed, depending on your hardware should take less than a minute
    ```bash
    python depth_video.py
    ```
 
-## Results
-
-
-
 ## Acknowledgements
 This project builds upon the [ML-Depth Pro repository](https://github.com/apple/ml-depth-pro/tree/main) developed by Apple Inc. I would like to acknowledge the fantastic work of Apple's Machine Learning team in creating the original model.
-
+## Reference 
+```bibtex
+@article{Bochkovskii2024:arxiv,
+  author     = {Aleksei Bochkovskii and Ama\"{e}l Delaunoy and Hugo Germain and Marcel Santos and
+               Yichao Zhou and Stephan R. Richter and Vladlen Koltun}
+  title      = {Depth Pro: Sharp Monocular Metric Depth in Less Than a Second},
+  journal    = {arXiv},
+  year       = {2024},
+  url        = {https://arxiv.org/abs/2410.02073},
+}
+```
 ### License
 This project incorporates software provided by Apple Inc., which is licensed under the following terms:
 
